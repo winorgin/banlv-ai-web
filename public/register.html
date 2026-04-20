@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - AI Boyfriend</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>💕 AI Boyfriend</h1>
+            <h2>注册</h2>
+            
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username" required minlength="3">
+                    <small>至少3个字符</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <small>至少6个字符</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">确认密码</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <button type="submit" class="btn-primary">注册</button>
+            </form>
+            
+            <div class="auth-links">
+                <p>已有账号？ <a href="/login">立即登录</a></p>
+            </div>
+            
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script>
+        async function handleRegister(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim().toLowerCase();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const messageEl = document.getElementById('message');
+            
+            if (password !== confirmPassword) {
+                messageEl.textContent = '两次密码输入不一致';
+                messageEl.className = 'message error';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, email, password, platform: 'web' })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    messageEl.textContent = '注册成功！正在跳转...';
+                    messageEl.className = 'message success';
+                    const token = data.data.token;
+                    localStorage.setItem('token', token);
+                    await syncGuestMessages(token);
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 1000);
+                } else {
+                    messageEl.textContent = data.detail || data.message || '注册失败';
+                    messageEl.className = 'message error';
+                }
+            } catch (error) {
+                messageEl.textContent = '网络错误，请重试';
+                messageEl.className = 'message error';
+            }
+        }
+
+        async function syncGuestMessages(token) {
+            try {
+                const raw = localStorage.getItem('guest_messages');
+                if (!raw) return;
+                const messages = JSON.parse(raw);
+                if (!Array.isArray(messages) || messages.length === 0) return;
+                await fetch('/api/chat/sync', {
+                    method: 'POST',
+                    headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ messages }),
+                });
+                localStorage.removeItem('guest_messages');
+                sessionStorage.removeItem('guest_token');
+            } catch (e) {
+                console.warn('[Sync] 失败:', e);
+            }
+        }
+    </script>
+</body>
+</html>

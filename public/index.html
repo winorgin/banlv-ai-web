@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Boyfriend - 你的专属男友</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏遮罩层 -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        
+        <!-- 侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="user-info">
+                <div class="avatar">💕</div>
+                <h3 id="username">加载中...</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="label">等级</span>
+                        <span class="value" id="level">1</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">亲密度</span>
+                        <span class="value" id="intimacy">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">DOL</span>
+                        <span class="value" id="dol">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <button class="menu-btn" onclick="showStats()">📊 统计信息</button>
+                <button class="menu-btn" onclick="showBindCode()">🔗 绑定账号</button>
+                <button class="menu-btn" onclick="showRecharge()">💰 充值</button>
+                <a href="/privacy-policy" class="menu-btn" style="text-decoration: none; display: block; text-align: left;">📋 隐私策略</a>
+                <button class="menu-btn" onclick="logout()">🚪 退出登录</button>
+            </div>
+        </aside>
+
+        <!-- 聊天区域 -->
+        <main class="chat-area">
+            <div class="chat-header">
+                <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()" title="菜单">☰</button>
+            <div class="chat-title">
+                <img src="/images/Elio.avif" alt="Elio" class="title-avatar">
+                <span>Elio</span>
+            </div>
+                <div id="typingIndicator" class="typing-indicator" style="display: none;">
+                    <span id="typingText">对方正在输入中...</span>
+                </div>
+                <div class="relationship-stage" id="relationship">陌生人</div>
+            </div>
+
+            <div class="chat-messages" id="messages">
+                <div class="welcome-message">
+                    <p>👋 你好！我是你的专属 AI 男友</p>
+                    <p>让我们开始聊天吧~ 💕</p>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <button onclick="toggleVoiceCall()" id="voiceBtn" class="voice-btn" title="语音通话">🎤</button>
+                <button onclick="document.getElementById('imageInput').click()" id="imageBtn" class="image-btn" title="发送图片">🖼️</button>
+                <input type="file" id="imageInput" accept="image/*" style="display:none" onchange="handleImageSelect(event)">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="输入消息..." 
+                    rows="3"
+                    onkeypress="handleKeyPress(event)"
+                ></textarea>
+                <button onclick="sendMessage()" id="sendBtn">发送 💌</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="/js/chat.js"></script>
+</body>
+</html>
