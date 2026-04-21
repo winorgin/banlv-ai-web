@@ -1,123 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy for elio Facebook application - Domies Technology Limited">
-  <title>Privacy Policy - elio</title>
+  <title>隐私政策 - AI男友</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #595959;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
+      color: #333;
       background: #fff;
-      max-width: 900px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 24px 20px 48px;
     }
-    [data-custom-class='body'], [data-custom-class='body'] * {
-          background: transparent !important;
-        }
-[data-custom-class='title'], [data-custom-class='title'] * {
-          font-family: Arial !important;
-font-size: 26px !important;
-color: #000000 !important;
-        }
-[data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
-          font-family: Arial !important;
-color: #595959 !important;
-font-size: 14px !important;
-        }
-[data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
-          font-family: Arial !important;
-font-size: 19px !important;
-color: #000000 !important;
-        }
-[data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
-          font-family: Arial !important;
-font-size: 17px !important;
-color: #000000 !important;
-        }
-[data-custom-class='body_text'], [data-custom-class='body_text'] * {
-          color: #595959 !important;
-font-size: 14px !important;
-font-family: Arial !important;
-        }
-[data-custom-class='link'], [data-custom-class='link'] * {
-          color: #3030F1 !important;
-font-size: 14px !important;
-font-family: Arial !important;
-word-break: break-word !important;
-        }
-      ul {
-        list-style-type: square;
-      }
-      ul > li > ul {
-        list-style-type: circle;
-      }
-      ul > li > ul > li > ul {
-        list-style-type: square;
-      }
-      ol li {
-        font-family: Arial ;
-      }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 15px 0;
+    header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
     }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background: #f5f5f5;
-    }
-    h1, h2, h3 {
-      color: #000;
-      margin: 20px 0 10px 0;
-    }
-    h1 {
-      font-size: 26px;
-    }
-    h2 {
-      font-size: 19px;
-    }
-    h3 {
-      font-size: 17px;
-    }
-    a {
-      color: #3030F1;
+    header a {
+      color: #e84393;
       text-decoration: none;
+      font-size: 14px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .logo {
-      display: block;
-      margin: 0 auto 3.125rem;
-      width: 11.125rem;
-      height: 2.375rem;
-      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzgiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAxNzggMzgiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSIjRDFEMUQxIiBkPSJNNC4yODMgMjQuMTA3Yy0uNzA1IDAtMS4yNTgtLjI1Ni0xLjY2LS43NjhoLS4wODVjLjA1Ny41MDIuMDg2Ljc5Mi4wODYuODd2Mi40MzRILjk4NXYtOC42NDhoMS4zMzJsLjIzMS43NzloLjA3NmMuMzgzLS41OTQuOTUtLjg5MiAxLjcwMi0uODkyLjcxIDAgMS4yNjQuMjc0IDEuNjY1LjgyMi40MDEuNTQ4LjYwMiAxLjMwOS42MDIgMi4yODMgMCAuNjQtLjA5NCAxLjE5OC0uMjgyIDEuNjctLjE4OC40NzMtLjQ1Ni44MzMtLjgwMyAxLjA4LS4zNDcuMjQ3LS43NTYuMzctMS4yMjUuMzd6TTMuOCAxOS4xOTNjLS40MDUgMC0uNy4xMjQtLjg4Ni4zNzMtLjE4Ny4yNDktLjI4My42Ni0uMjkgMS4yMzN2LjE3N2MwIC42NDUuMDk1IDEuMTA3LjI4NyAxLjM4Ni4xOTIuMjguNDk1LjQxOS45MS40MTkuNzM0IDAgMS4xMDEtLjYwNSAxLjEwMS0xLjgxNiAwLS41OS0uMDktMS4wMzQtLjI3LTEuMzI5LS4xODItLjI5NS0uNDY1LS40NDMtLjg1Mi0uNDQzem01LjU3IDEuNzk0YzAgLjU5NC4wOTggMS4wNDQuMjkzIDEuMzQ4LjE5Ni4zMDQuNTEzLjQ1Ny45NTQuNDU3LjQzNyAwIC43NS0uMTUyLjk0Mi0uNDU0LjE5Mi0uMzAzLjI4OC0uNzUzLjI4OC0xLjM1MSAwLS41OTUtLjA5Ny0xLjA0LS4yOS0xLjMzOC0uMTk0LS4yOTcuNTEtLjQ0NS45NS0uNDQ1LjQzOCAwIC43NTMuMTQ3Ljk0Ni40NDMuMTk0LjI5NS4yOS43NDIuMjkgMS4zNHpNMTkuNzEgMjRsLS40NjItMi4xLS42MjMtMi42NTNoLS4wMzdMMTcuNDkzIDI0SDE1LjczbC0xLjcwOC02LjAwNWgxLjYzM2wuNjkzIDIuNjU5Yy4xMS40NzYuMjI0IDEuMTMzLjMzOCAxLjk3MWguMDMyYzAuMDE1LS4yNzIuMDc3LS43MDQuMTg4LTEuMjk0bC4wODYtLjQ1Ny43NDItMi44NzloMS44MDRsLjcwNCAyLjg3OWMuMDE0LjA3OS4wMzcuMTk1LjA2Ny4zNWEyMC45OTggMjAuOTk4IDAgMCAxIC4xNjcgMS4wMDJjLjAyMy4xNjUuMDM2LjI5OS4wNCAuMzk5aC4wMzJjLjAzMi0uMjU4LjA5LS42MTQuMTcyLTEuMDYuMDgyLS40NS4xNDEtLjc1NC4xNzctLjkxMWwuNzItMi42NTloMS42MDZMMjEuNDk0IDI0aC0xLjc4M3ptNy4wODYtNC45NTJjLS4zNDggMC0uNjIuMTEtLjgxNy4zMy0uMTk3LjIyLS4zMS41MzMtLjMzOC45MzdoMi4yOTljLS4wMDgtLjQwNC0uMTEzLS43MTctLjMxNy0uOTM3LS4yMDQtLjIyLS40OC0uMzMtLjgyNy0uMzN6bS4yMyA1LjA2Yy0uOTY2IDAtMS43MjItLjI2Ny0yLjI2Ni0uOC0uNTQ0LS41MzQtLjgxNi0xLjI5LS44MTYtMi4yNjcgMC0xLjAwNy4yNTEtMS43ODUuNzU0LTIuMzM0LjUwMy0uNTUgMS4xOTktLjgyNSAyLjA4Ny0uODI1Ljg0OCAwIDEuNTEuMjQyIDEuOTgyLjcyNS40NzIuNDg0LjcwOSAxLjE1Mi43MDkgMi4wMDR2Ljc5NWgtMy44NzNjLjAxOC40NjUuMTU2LjgyOS40MTQgMS4wOS4yNTguMjYxLjYyLjM5MiAxLjA4NS4zOTIuMzYxIDAgLjcwMy0uMDM3IDEuMDI2LS4xMTNhNS4xMzMgNS4xMzMgMCAwIDAgMS4wMS0uMzZ2MS4yNjhjLS4yODcuMTQzLS41OTMuMjUtLjkyLjMyYTUuNzk5IDUuNzk5IDAgMCAxLTEuMTkxLjEwNHptMy4yNTMtNi4yMjZjLjIyMiAwIC40MDYuMDE2LjU1My4wNDlsLS4xMjQgMS41MzZhMS44NzcgMS44NzcgMCAwIDAtLjQ4My0uMDQ0Yy0uNTIzIDAtLjkzLjEzNC0xLjIyMi40MDMtLjI5Mi4yNjgtLjQzOC42NDQtLjQzOCAxLjEyOFYyNGgtMS42Mzh2LTYuMDA1aDEuMjRsLjI0MiAxLjAxaC4wOGMuMTg3LS4zMzcuNDM5LS42MDguNzU2LS44MTRhMS44NiAxLjg2IDAgMCAxIDEuMDM0LS4zMDl6bTQuMDI5IDEuMTY2Yy0uMzQ3IDAtLjYyLjExLS44MTcuMzMtLjE5Ny4yMi0uMzEuNTMzLS4zMzguOTM3aDIuMjk5Yy0uMDA3LS40MDQtLjExMy0uNzE3LS4zMTctLjkzNy0uMjA0LS4yMi0uNDgtLjMzLS44MjctLjMzem0uMjMgNS4wNmMtLjk2NiAwLTEuNzIyLS4yNjctMi4yNjYtLjgtLjU0NC0uNTM0LS44MTYtMS4yOS0uODE2LTIuMjY3IDAtMS4wMDcuMjUxLTEuNzg1Ljc1NC0yLjMzNC41MDQtLjU1IDEuMi0uODI1IDIuMDg3LS44MjUuODQ5IDAgMS41MS4yNDIgMS45ODIuNzI1LjQ3My40ODQuNzA5IDEuMTUyLjcwOSAyLjAwNHYuNzk1aC0zLjg3M2MuMDE4LjQ2NS4xNTYuODI5LjQxNCAxLjA5LjI1OC4yNjEuNjIuMzkyIDEuMDg1LjM5Mi4zNjIgMCAuNzA0LS4wMzcgMS4wMjYtLjExM2E1LjEzMyA1LjEzMyAwIDAgMCAxLjAxLS4zNnYxLjI2OGMtLjI4Ny4xNDMtLjU5My4yNS0uOTIuMzJhNS43OSA1Ljc5IDAgMCAxLTEuMTkyLjEwNHptNS44MDMgMEM0OS4wNzkgMjQsNDguNTIgMjMuNzI1LDQ4LjEzNyAyMy4xNzdjLjQwMy0uNTQ4LjYwNC0xLjMwNy42MDQtMi4yNzggMC0uOTg0LS4yMDUtMS43NTItLjYxNS0yLjMwMS40MS0uNTUuOTc1LS44MjUsMS42OTUtLjgyNS43NTUgMCAxLjMzMi4yOTQsMS43MjkuODgxaC4wNTRhNi42OTcgNi42OTcgMCAwIDEtLjEyNC0xLjE5OHYtMS45MjJoMS42NDRWMjRoLTQuMDU3bC0uMzE3LS43NzloLS4wN2MtLjM3Mi41OTEtLjk0Ljg4Ni0xLjcwMi44ODZ6bS41NzQtMS4zMDZjLjQyIDAgLjcyNi0uMTIxLjkyMS0uMzY1LjE5Ni0uMjQzLjMwMi0uNjU3LjMyLTEuMjR2LS4xNzhjMC0uNjQ0LTEwMC0xLjEwNi0uMjk4LTEuMzg2LS4xOTktLjI3OS0uNTIyLS40MTktLjk3LS40MTlhLjk2Mi45NjIgMCAwIDAtLjg1IDQ2NWMtLjIwMy4zMS0uMzA0Ljc2LS4zMDQgMS4zNSAwIC41OTIuMTAyIDEuMDM1LjMwNiAxLjMzLjIwNC4yOTYuNDk2LjQ0My44NzUuNDQzem0xMC45MjItNC45MmMuNzA5IDAgMS4yNjQuMjc3LjEgLjY2NSw4My40IDUuNTMsNjAxIDIuMjc1IDAgLjk5Mi0uMjA2IDEuNzYtLjYyIDIuMzA0LS40MTQuNTQ0LS45NzcuODE2LTEuNjkuODE2LS43MDUgMC0xLjI1OC0uMjU2LTEuNjU5LS43NjhoLS4xMTNsLS4yNzQuNjYxaC0xLjI1MXYtOC4zNTdoMS42Mzh2MS45NDRjMCAuMjQ3LS4wMjEuNjQzLS4wNjQgMS4xODdoLjA2NGMuMzgzLS41OTQuOTUtLjg5MiAxLjcwMy0uODkyek0tLjUyNyAxLjMxYy0uNDA0IDAtLjcuMTI1LS44ODYuMzc0LS4xODYuMjQ5LS4yODMuNjYtLjI5IDEuMjMzdi4xNzdjMCAuNjQ1LjA5NiAxLjEwNy4yODcgMS4zODYuMTkyLjI4IDQuOTU1LjQxOS45MS40MTkuMzM3IDAgLjYwNS0uMTU1LjgwNC0uNDY1LjE5OS0uMzEuMjk4LS43Ni4yOTgtMS4zNSAwLS41OTEtLjEtMS4wMzUtLjMtMS4zM2EuOTQzLjk0MyAwIDAgMC0uODIzLS40NDd6bTMuMTg2LTEuMTk3aDEuNzk0bDEuMTM0IDMuMzN5Yy4wOTYuMjkzLjE2My42NC4xOTggMS4wNDJoLjAzM2MuMDM5LS4zNy4xMTYtLjcxNy4yMy0xLjA0MmwxLjExMi0zLjM3OWgxLjc1N2wtMi41NCA2Ljc3M2MtLjIzNC42MjctLjU2NiAxLjA5Ni0uOTk3IDEuNDA3LS40MzIuMzEyLS45MzYuNDY4LTEuNTEyLjQ2OC0uMjgzIDAtLjU2LS4wMy0uODMzLS4wOTJ2LTEuM2EyLjggMi44IDAgMCAwIC42NDUuMDdjLjI5IDAgLjU0My0uMDg4Ljc2LS4yNjYuMjE3LS4xNzcuMzg2LS40NDQuNTA4LS44MDNsLjA5Ni0uMjk1LTIuMzg1LTUuOTYyeiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDczKSI+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjE5IiBjeT0iMTkiIHI9IjE5IiBmaWxsPSIjRTBFMEUwIi8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMi40NzQgMTUuNDQzaDUuMTYyTDEyLjQzNiAzMC40VjEwLjM2M2gxNS4ybC01LjE2MiA1LjA4eiIvPgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBmaWxsPSIjRDJEMkQyIiBkPSJNMTIxLjU0NCAxNC41NnYtMS43MjhoOC4yNzJ2MS43MjhoLTMuMDI0VjI0aC0yLjI0di05LjQ0aC0zLjAwOHptMTMuNzQ0IDUuNTY4Yy0xLjI5IDAtMi4zNDEtLjQxOS0zLjE1Mi0xLjI1Ni04LjMxLThCMzkuNDI4IDk2LDM5LjA2IDgsMzguODQ4LDYuNTE2LDM3Ljc2OCw1LjY3MSwzNi41OCA0Ljg0M2MuODE2LS44MjcsMS44NzItMS4yNDwsMy4xNjgtMS4yNDtzMi4zNi40MDMgMy4xOTIgMS4yMDhjLjgzMi44MDUgMS4yNDggMS44OCAxLjI0OCAzLjIyNCAwIC4zMS0uMDIxLjU5Ny0uMDY0Ljg2NEgzOC44NDhjLjA1My41NzYuMjY3IDEuMDQuNjQgMS4zOTIuMzczLjM1Mi44NDguNTI4IDEuNDI0LjUyOC43NzkgMCAxLjM1NS0uMzIgMS43MjgtLjk2aDIuNDMyYTMuODkxIDMuODkxIDAgMCAxIC0xLjQ4OCAyLjA2NGMtLjczNi41My0xLjYyNy44LTIuNjcyLjh6bTEuNDgtNi42ODhjLS40LS4zNTItLjg4My0uNTI4LTEuNDQ4LS41MjhzLTEuMDM3LjE3Ni0xLjQxNi41MjhjLS4zNzkuMzUyLS42MDUuODIxLS42OC4xNDA4aDQuMTkyYy0uMDMyLS41ODctLjI0OC0xLjA1Ni0uNjQ4LTEuNDA4em03LjAxNi0yLjMwNHYxLjU2OGMuNTk3LTEuMTMgMS40NjEtMS42OTYgMi41OTItMS42OTZ2Mi4zMDRoLS41NmMtLjY3MiAwLTEuMTc5LjE2OC0xLjUyLjUwNC0uMzQxLjMzNi0uNTEyLjkxNS0uNTEyIDEuNzM2VjI0aC0yLjI1NnYtOC44NjRoMi4yNTZ6bTYuNDQ4IDB2MS4zMjhjLjU2NS05LjczLDEuNDgzLTEuNDU2LDIuNzUyLTEuNDU2LjY3MiAwIDEuMjcyLjE1NSwxLjguNDY0LjUyOC4zMS45MzYuNzUyIDEuMjI0IDEuMzI4LjMxLS41NTUuNzMzLS45OTIsMS4yNzItMS4zMTJhMy40ODggMy40ODggMCAwIDEgMS44MTYtLjQ4YzEuMDU2IDAgMS45MDcuMzMgMi41NTIuOTkyLjY0NS42NjEuOTY4IDEuNTkuOTY4IDIuNzg0VjI0aC0yLjI0di00Ljg5NmMwLS42OTMtLjE3Ni0xLjIyNC0uNTI4LTEuNTkyLS4zNTItLjM2OC0uODMyLS41NTItMS40NC0uNTUycy0xLjA5LjE4NC0xLjQ0OC41NTJjLS4zNTcuMzY4LS41MzYuODk5LS41MzYgMS41OTJWMjRoLTIuMjR2LTQuODk2YzAtLjY5My0uMTc2LTEuMjI0LS41MjgtMS41OTItLjM1Mi0uMzY4LS44MzItLjU1Mi0xLjQ0LS41NTJzLTEuMDkuMTg0LTEuNDQ4LjU1MmMtLjM1Ny4zNjgtLjUzNi44OTktLjUzNiAxLjU5MlYyNGgtMi4yNTZ2LTguODY0aDIuMjU2em0xNi4yMTYgMFYxMi4xNmgyLjI1NlYyNGgtMi4yNTZ6bTcuMDQtLjFibC0zLjQ3Mi04LjcwNGgyLjUyOGwyLjI1NiA2LjMwNCAyLjM4NC02LjMwNGgyLjM1MmwtNS41MzYgMTMuMDU2aC0yLjM1MmwxLjg0LTQuMzUyeiIvPgogICAgPC9nPgo8L3N2Zz4K) center no-repeat;
-    }
-    .footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
+    header a:hover { text-decoration: underline; }
+    h1 { font-size: 26px; color: #1a1a1a; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #888; margin-bottom: 28px; }
+    h2 { font-size: 18px; color: #1a1a1a; margin: 28px 0 10px; }
+    h3 { font-size: 15px; color: #333; margin: 16px 0 8px; }
+    p { font-size: 14px; color: #555; margin-bottom: 12px; }
+    ul { font-size: 14px; color: #555; padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; }
+    a { color: #e84393; }
+    .section { margin-bottom: 24px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
       text-align: center;
       font-size: 12px;
-      color: #888;
+      color: #aaa;
+    }
+    footer a { color: #aaa; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .contact-box {
+      background: #fdf0f7;
+      border: 1px solid #f5c3de;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <span class="logo"></span>
+  <header>
+    <a href="/">← 返回首页</a>
+  </header>
 
-      <div data-custom-class="body">
-      <div><strong><span style="font-size: 26px;"><span data-custom-class="title"><bdt class="block-component"></bdt><bdt class="question"><h1>PRIVACY POLICY</h1></bdt><bdt class="statement-end-if-in-editor"></bdt></span></span></strong></div><div><span style="color: rgb(127, 127, 127);"><strong><span style="font-size: 15px;"><span data-custom-class="subtitle">Last updated <bdt class="question">April 20, 2026</bdt></span></span></strong></span></div><div><br></div><div><br></div><div><br></div><div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text">This Privacy Notice for <bdt class="question noTranslate">Domies Technology Limited</bdt><bdt class="block-component"></bdt> (<bdt class="block-component"></bdt>"<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"<bdt class="statement-end-if-in-editor"></bdt></span><span data-custom-class="body_text">), describes how and why we might access, collect, store, use, and/or share (<bdt class="block-component"></bdt>"<strong>process</strong>"<bdt class="statement-end-if-in-editor"></bdt>) your personal information when you use our services (<bdt class="block-component"></bdt>"<strong>Services</strong>"<bdt class="statement-end-if-in-editor"></bdt>), including when you:</span></span></span><span style="font-size: 15px;"><span style="color: rgb(127, 127, 127);"><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><bdt class="block-component"></bdt></span></span></span></span></span></span></li></ul><div><bdt class="block-component"><span style="font-size: 15px;"><span style="font-size: 15px;"><span style="color: rgb(127, 127, 127);"><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><bdt class="block-component"></bdt></span></span></span></span></span></span></bdt></div><ul><li data-custom-class="body_text" style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Download and use<bdt class="block-component"><bdt class="block-component"></bdt> our Facebook application<bdt class="block-component"> </bdt>(<bdt class="question noTranslate">elio)</bdt><bdt class="statement-end-if-in-editor">,</bdt><bdt class="statement-end-if-in-editor"> or any other application of ours that links to this Privacy Notice</bdt></bdt></span></span></span></span></span></span></span></li></ul><div style="line-height: 1.5;"><bdt class="block-component"><span style="font-size: 15px;"></span></bdt></li></ul><div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(127, 127, 127);"><span data-custom-class="body_text"><span style="color: rgb(89, 89, 89);"><span data-custom-class="body_text"><bdt class="block-component"></bdt></span></span></span></span></span></div><ul><li data-custom-class="body_text" style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Engage with us in other related ways,
+  <h1>隐私政策</h1>
+  <p class="updated">最近更新日期：2026年4月21日</p>
+
+  <div class="section">
+    <p>欢迎使用 AI男友（以下简称"本产品"或"我们"）。我们非常重视您的个人隐私，并承诺依据本隐私政策保护您的个人信息安全。请您在使用本产品前，仔细阅读本隐私政策的全部内容。</p>
+    <p>本隐私政策适用于您使用 <strong>banlv-ai.com</strong> 及 <strong>web.banlv-ai.com</strong> 所提供的所有服务。</p>
+  </div>
+
+  <div class="section">
+    <h2>一、我们收集的信息</h2>
+    <h3>1.1 您主动提供的信息</h3>
+    <ul>
+      <li>注册账号时填写的用户名、邮箱地址或手机号码</li>
+      <li>与 AI 角色的对话内容</li>
+      <li>充值及交易时提供的支付信息（由第三方支付机构处理，我们不存储银行卡等敏感信息）</li>
+    </ul>
+    <h3>1.2 自动收集的信息</h3>
+    <ul>
+      <li>设备信息（设备类型、操作系统版本、浏览器类型）</li>
+      <li>使用日志（访问时间、功能使用记录、错误日志）</li>
+      <li>IP 地址及大致地理位置</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>二、我们如何使用您的信息</h2>
+    <ul>
+      <li>提供、维护和改进本产品的服务</li>
+      <li>个性化您与 AI 角色的互动体验</li>
+      <li>处理充值及支付请求</li>
+      <li>保障账号安全，防止欺诈和滥用</li>
+      <li>依法履行监管合规义务</li>
+      <li>向您发送服务通知（如账号变动、充值成功等）</li>
+    </ul>
+    <p>我们不会将您的个人信息用于与提供服务无关的目的，也不会以任何形式向第三方出售您的个人信息。</p>
+  </div>
+
+  <div class="section">
+    <h2>三、信息的存储与保护</h2>
+    <p>您的数据存储在位于中国境内的服务器上。我们采用以下措施保护您的信息：</p>
+    <ul>
+      <li>数据传输全程使用 HTTPS/TLS 加密</li>
+      <li>密码采用不可逆哈希算法存储</li>
+      <li>定期进行安全审计和漏洞扫描</li>
+      <li>限制内部员工对用户数据的访问权限</li>
+    </ul>
+    <p>我们仅在提供服务所必要的期间内保留您的个人信息。若您注销账号，我们将依法在合理时间内删除或匿名化处理您的数据。</p>
+  </div>
+
+  <div class="section">
+    <h2>四、Cookie 和类似技术</h2>
+    <p>我们使用 Cookie 及本地存储（localStorage）来保持您的登录状态和记录个性化偏好。您可通过浏览器设置拒绝 Cookie，但这可能影响部分功能的正常使用。</p>
+  </div>
+
+  <div class="section">
+    <h2>五、第三方服务</h2>
+    <p>本产品使用以下第三方服务，这些服务商有各自的隐私政策：</p>
+    <ul>
+      <li><strong>AI 对话服务</strong>：用于驱动 AI 角色的智能对话能力</li>
+      <li><strong>支付服务</strong>：用于处理充值和订单（受相关支付机构隐私政策约束）</li>
+    </ul>
+    <p>我们对上述第三方服务商的隐私实践不承担直接责任，建议您查阅其相应隐私政策。</p>
+  </div>
+
+  <div class="section">
+    <h2>六、未成年人保护</h2>
+    <p>本产品仅面向 <strong>18 周岁及以上</strong>的成年用户。我们不会故意收集未成年人的个人信息。若您发现未成年人使用了本产品，请及时联系我们，我们将立即删除相关信息。</p>
+  </div>
+
+  <div class="section">
+    <h2>七、您的权利</h2>
+    <p>依据《个人信息保护法》等相关法律法规，您享有以下权利：</p>
+    <ul>
+      <li>查阅和获取您的个人信息</li>
+      <li>更正不准确的个人信息</li>
+      <li>删除您的个人信息（注销账号）</li>
+      <li>撤回对个人信息处理的同意</li>
+      <li>要求对自动化决策进行人工复核</li>
+    </ul>
+    <p>如需行使上述权利，请通过下方联系方式与我们取得联系，我们将在 15 个工作日内予以答复。</p>
+  </div>
+
+  <div class="section">
+    <h2>八、隐私政策的更新</h2>
+    <p>本隐私政策可能随业务发展或法律法规变化而适时更新。更新后的政策将在本页面公告，重大变更将通过站内通知或其他方式告知您。继续使用本产品视为您接受更新后的隐私政策。</p>
+  </div>
+
+  <div class="section">
+    <h2>九、联系我们</h2>
+    <p>如您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
+    <div class="contact-box">
+      <p><strong>产品名称：</strong>AI男友</p>
+      <p><strong>网站：</strong><a href="https://banlv-ai.com">banlv-ai.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/">返回首页</a>
+    &nbsp;|&nbsp;
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026017593号</a>
+  </footer>
+</body>
+</html>
